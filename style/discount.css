@@ -1,5 +1,4 @@
 
-
 .discount__input-checkbox {
   position: relative;
   -webkit-appearance: none;
@@ -43,7 +42,7 @@
 }
 
 .discount__input-text {
-  max-width: 200px;
+  max-width: 206px;
   display: inline-block;
   vertical-align: middle;
 }

@@ -25,14 +25,14 @@
       <form class="card__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
         <fieldset class="form__fieldset">
 
-          <label class="form__label form__label-name" for="name">
-              Наименование
-            <input class="form__input" type="text" name="name" id="name" required >
+          <label class="form__label form__label-denomination label" for="denomination">
+              <span class="label__name">Наименование</span>
+            <input class="form__input" type="text" name="name" id="denomination" required >
           </label>
 
 
-          <label class="form__label form__label-category" for="category">
-              Категория
+          <label class="form__label form__label-category label" for="category">
+              <span class="label__name">Категория</span>
             <select class="form__input form__select-category" name="category" id="category">
               <option value="food products">Продукты питания</option>
               <option value="cosmetic">Косметика</option>
@@ -42,8 +42,8 @@
           </label>
 
 
-          <label class="form__label form__label-unit" for="units">
-              Единицы измерения
+          <label class="form__label form__label-unit label" for="units">
+            <span class="label__name">Единицы измерения</span>
             <select class="form__input form__select-units" name="units" id="units">
               <option value="pc.1">Штука</option>
               <option value="l">Литр</option>
@@ -53,7 +53,7 @@
           </label>
 
           <div class="discount">
-            <label class="form__label discount__label" for="check">
+            <label class="form__label discount__label " for="check">
                 Дисконт
             </label>
             <input class="form__input discount__input discount__input-checkbox "
@@ -63,21 +63,21 @@
                    type="text" name="discount" disabled >
           </div>
 
-          <label class="form__label form__label-description" for="description">
-              Описание
+          <label class="form__label form__label-description label" for="description">
+              <span class="label__name">Описание</span>
             <textarea class="form__textarea form__input" name="description" required id="description"
                       placeholder="Описание и характеристики товара. Используйте 20 до 500 символов"
                       minlength="20" maxlength="500"></textarea>
           </label>
 
 
-          <label class="form__label form__label-count" for="count">
-              Количество
+          <label class="form__label form__label-count label" for="count">
+              <span class="label__name">Количество</span>
             <input class="form__input" type="number" name="count" min="1" id="count" required >
           </label>
 
-          <label class="form__label form__label-price" for="price">
-              Цена
+          <label class="form__label form__label-price label" for="price">
+              <span class="label__name">Цена</span>
             <input class="form__input" type="text" name="price" id="price" required >
           </label>
 
