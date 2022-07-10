@@ -1,0 +1,30 @@
+
+.container {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-top: 28px;
+  position: relative;
+}
+
+.card__caption {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+
+.card__button {
+  width:20px;
+  height: 20px;
+  background-image: url("/img/vector-1.png"), url("/img/vector-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+

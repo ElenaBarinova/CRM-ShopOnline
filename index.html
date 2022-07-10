@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Карточка товара</title>
+  <link rel="icon" type="image/svg+xml" href="img/shape-82.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="script.js"> </script>
+
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <section class="card">
+    <div class="container card__container" id="products">
+
+      <button type="button" class="card__button"></button>
+
+      <h1 class="card__caption">
+        Добавить товар
+      </h1>
+
+      <form class="card__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <fieldset class="form__fieldset">
+
+          <label class="form__label form__label-name" for="name">
+              Наименование
+            <input class="form__input" type="text" name="name" id="name" required >
+          </label>
+
+
+          <label class="form__label form__label-category" for="category">
+              Категория
+            <select class="form__input form__select-category" name="category" id="category">
+              <option value="food products">Продукты питания</option>
+              <option value="cosmetic">Косметика</option>
+              <option value="Games">Игры</option>
+              <option value="children's products">Детские товары</option>
+            </select>
+          </label>
+
+
+          <label class="form__label form__label-unit" for="units">
+              Единицы измерения
+            <select class="form__input form__select-units" name="units" id="units">
+              <option value="pc.1">Штука</option>
+              <option value="l">Литр</option>
+              <option value="m">Метр</option>
+              <option value="kg">Килограмм</option>
+            </select>
+          </label>
+
+          <div class="discount">
+            <label class="form__label discount__label" for="check">
+                Дисконт
+            </label>
+            <input class="form__input discount__input discount__input-checkbox "
+                   type="checkbox" id="check" >
+
+            <input class="form__input discount__input discount__input-text"
+                   type="text" name="discount" disabled >
+          </div>
+
+          <label class="form__label form__label-description" for="description">
+              Описание
+            <textarea class="form__textarea form__input" name="description" required id="description"
+                      placeholder="Описание и характеристики товара. Используйте 20 до 500 символов"
+                      minlength="20" maxlength="500"></textarea>
+          </label>
+
+
+          <label class="form__label form__label-count" for="count">
+              Количество
+            <input class="form__input" type="number" name="count" min="1" id="count" required >
+          </label>
+
+          <label class="form__label form__label-price" for="price">
+              Цена
+            <input class="form__input" type="text" name="price" id="price" required >
+          </label>
+
+        </fieldset>
+
+        <div class="form__box">
+          <button class="form__button" type="submit">
+            Добавить товар
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

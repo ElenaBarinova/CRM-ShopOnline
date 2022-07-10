@@ -1,0 +1,92 @@
+
+.form__fieldset {
+  min-height: 403px;
+  padding: 28px;
+  background: #FFFFFF;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-width: 0;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-rows: repeat(5,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 12px;
+}
+
+.form__label-name {
+  grid-row:1/2 ;
+  grid-column: 1/2;
+}
+
+.form__label-category {
+  grid-row: 2/3 ;
+  grid-column: 1/2;
+}
+
+.form__label-unit {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.discount {
+  grid-row:4/5 ;
+  grid-column: 1/2;
+}
+
+.form__label-description {
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+
+.form__label-count {
+  grid-row:3/4 ;
+  grid-column: 2/3
+}
+
+.form__label-price {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+
+
+.form__input {
+  width: 100%;
+  background-color: #F4F2FF;
+  height: 40px;
+  border: 0;
+  border-radius: 8px;
+  display: block;
+}
+
+.form__label {
+  display: block;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+
+.form__input:disabled {
+  background: #EEEEEE;
+}
+
+.form__textarea {
+  min-height: 112px;
+}
+
+.form__box {
+  width: 100%;
+  height: 39px;
+  padding-right: 32px;
+}
+
+.form__button {
+  width: 200px;
+  float: right;
+  padding: 10px 25px;
+  border-radius: 8px;
+  background:#6D5BD0;
+  border:0;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
